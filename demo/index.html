@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>رزومه امیرمحمد نصیری</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Tahoma;
+}
+
+body{
+    background:linear-gradient(135deg,#1e1e2f,#3a3a6a);
+    color:white;
+}
+
+header{
+    background:rgba(0,0,0,0.4);
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:white;
+    margin:0 10px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ffd369;
+}
+
+.container{
+    display:flex;
+    max-width:1200px;
+    margin:40px auto;
+    gap:30px;
+    padding:20px;
+}
+
+.sidebar{
+    background:rgba(255,255,255,0.1);
+    border-radius:20px;
+    padding:25px;
+    width:320px;
+    animation:slide 1s;
+}
+
+.sidebar img{
+    width:100%;
+    border-radius:15px;
+}
+
+.sidebar h2{
+    text-align:center;
+    margin-top:15px;
+}
+
+.sidebar h4{
+    text-align:center;
+    color:#ffd369;
+}
+
+.info p{
+    margin:8px 0;
+    font-size:14px;
+}
+
+.skills p{
+    margin:6px 0;
+}
+
+.main{
+    flex:1;
+    animation:fade 1.2s;
+}
+
+.section{
+    background:rgba(255,255,255,0.1);
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:25px;
+}
+
+.section h3{
+    color:#ffd369;
+    margin-bottom:15px;
+}
+
+@keyframes fade{
+    from{opacity:0; transform:translateY(30px)}
+    to{opacity:1; transform:translateY(0)}
+}
+
+@keyframes slide{
+    from{opacity:0; transform:translateX(-50px)}
+    to{opacity:1; transform:translateX(0)}
+}
+
+@media(max-width:900px){
+    .container{
+        flex-direction:column;
+    }
+    .sidebar{
+        width:100%;
+    }
+}
+</style>
+</head>
+
+<body dir="rtl">
+
+<header>
+    <h3>رزومه شخصی</h3>
+    <nav>
+        <a href="#">صفحه اصلی</a>
+        <a href="#">کارت ویزیت</a>
+        <a href="#">لینک‌ها</a>
+        <a href="#">دانلود رزومه</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <img src="./img/pic.png">
+        <h2>امیرمحمد نصیری</h2>
+        <h4>مهندس نرم افزار</h4>
+
+        <div class="info">
+            <p>📅 تولد: 15 / 11 / 1382</p>
+            <p>💍 وضعیت: مجرد</p>
+            <p>📧 amir@gmail.com</p>
+            <p>📞 09929717930</p>
+            <p>📍 نیشابور، خراسان رضوی</p>
+        </div>
+
+        <div class="skills">
+            <h4>مهارت‌ها</h4>
+            <p>C# ⭐⭐⭐⭐⭐</p>
+            <p>SQL ⭐⭐⭐⭐⭐</p>
+            <p>.NET / .NET Core ⭐⭐⭐⭐</p>
+        </div>
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+
+        <div class="section">
+            <h3>درباره من</h3>
+            <p>
+                مهندس نرم افزار با بیش از 4 سال سابقه تخصصی در توسعه نرم افزارهای
+                دسکتاپ .NET و .NET Core و 2 سال تجربه در بازی‌سازی و برنامه‌نویسی موبایل.
+            </p>
+        </div>
+
+        <div class="section">
+            <h3>سوابق تحصیلی</h3>
+            <p>🎓 فوق دیپلم – دانشکده فنی شریعتی نیشابور (1401–1403)</p>
+            <p>🎓 کارشناسی – دانشکده فنی شهید منتظری مشهد (1403–اکنون)</p>
+        </div>
+
+        <div class="section">
+            <h3>سوابق شغلی</h3>
+            <p>✔ فناوران شریف – مسئول IT (5 ماه)</p>
+            <p>✔ شرکت پالود – مسئول IT (1 ماه)</p>
+            <p>✔ شرکت پالود – مدیر IT (5 ماه)</p>
+            <p>✔ پالود پخش پارس – مدیر IT (3 ماه)</p>
+            <p>✔ فرمانداری نیشابور – مسئول IT (1 ماه)</p>
+        </div>
+
+        <div class="section">
+            <h3>لینک‌های ارتباطی</h3>
+            <p>🌐 وبلاگ | آپارات | یوتیوب | GitHub | LinkedIn | جابینجا</p>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
